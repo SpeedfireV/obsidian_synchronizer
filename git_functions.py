@@ -1,11 +1,11 @@
+import os
 from datetime import datetime
+
+from dotenv import load_dotenv
 from git import Repo
 from sys_info import get_device_name
 
-# Configuration
-repo_path = "C:/Users/Greg/Desktop/test_repo/test_repo/"  # Replace with your repo's local path
-remote_name = "origin"
-branch_name = "master"  # Replace with your branch name
+repo_path = open("repo_info.env", "r").readline(1)
 
 
 def handle_unfinished_merge(repo):
@@ -32,7 +32,7 @@ def pull_if_updates_exist():
 
         # Fetch the latest changes from the remote
         print("Fetching remote changes...")
-        repo.remotes[remote_name].fetch()
+        repo.remotes[os.environ['REMOTE_NAME']].fetch()
 
         # Get the local and remote branches
         local_branch = repo.heads[branch_name]
@@ -52,7 +52,7 @@ def pull_if_updates_exist():
         print(f"Error: {e}")
 
 def push_to_git():
-    commit_message = f"{get_device_name()} | {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}"
+    commit_message = f"{get_device_name()} | " + str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     try:
         # Open the repository
         repo = Repo(repo_path)
@@ -60,7 +60,6 @@ def push_to_git():
         # Check if there are uncommitted changes
         if repo.is_dirty() or repo.untracked_files:
             print("Staging changes...")
-
             # Stage all changes
             repo.git.add(A=True)
 
@@ -81,5 +80,9 @@ def push_to_git():
         print(f"Error: {e}")
 
 if __name__ == "__main__":
+    load_dotenv('repo_info.env')
+    repo_path = os.environ['REPO_PATH']
+    remote_name = os.environ['REMOTE_NAME']
+    branch_name = os.environ['BRANCH_NAME']
     pull_if_updates_exist()
     push_to_git()
