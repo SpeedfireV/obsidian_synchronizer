@@ -67,7 +67,7 @@ For Windows:
 - Enable support for synchronizing multiple vaults.
 - Simplify installation process
 ## Star History
-***
+
 <a href="https://star-history.com/#SpeedfireV/obsidian_synchronizer&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=SpeedfireV/obsidian_synchronizer&type=Date&theme=dark" />
@@ -75,4 +75,3 @@ For Windows:
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=SpeedfireV/obsidian_synchronizer&type=Date" />
  </picture>
 </a>
-***
