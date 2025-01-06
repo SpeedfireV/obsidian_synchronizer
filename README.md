@@ -66,5 +66,4 @@ For Windows:
 - Add instructions for MacOS & Linux synchronization
 - Enable support for synchronizing multiple vaults.
 - Simplify installation process
-
 <iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2hwXzd5djF2d2g3Y1VYdFB2amk1ZGRKWnJiTE1JaTNTajBiV3BtZg==#SpeedfireV/obsidian_synchronizer&Date" frameBorder="0"></iframe>
