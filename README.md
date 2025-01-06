@@ -1,4 +1,4 @@
-***<p style="text-align:center; font-family:'Jaini Purva'">![image info](assets/obsidian_with_transparent_background.png)</p>***
+***<p align=center style="text-align:center; font-family:'Jaini Purva'">![image info](assets/obsidian_with_transparent_background.png)</p>***
 
 # ***<p style="text-align:center; font-family:'Jaini Purva'">Obsidian Synchronizer</p>***
 
