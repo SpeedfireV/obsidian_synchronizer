@@ -3,14 +3,15 @@ Installation Steps:
 2. Create git repo for your vault (on Github, Github etc.)
 3. In your vault's location init your repo:
 
-
+``
     git init
     git remote add origin link-to-your-repo # (e.g. https://github.com/SpeedfireV/test.git)
     git branch -M main
     git add .
     git commit -m 'init'
     git push --set-upstream origin main
-4. Copy THIS repo to your local machine `git clone https://github.com/SpeedfireV/obsidian_synchronizer.git`
+``
+5. Copy THIS repo to your local machine `git clone https://github.com/SpeedfireV/obsidian_synchronizer.git`
 5. Run `pip install -r requirements.txt` in this copied repo location to install required dependencies
 6. Go to _repo_info.env_ and change data accordingly with instruction inside the file
 
