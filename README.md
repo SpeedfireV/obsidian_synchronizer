@@ -1,3 +1,7 @@
+***<p style="text-align:center; font-family:'Jaini Purva'">![image info](assets/obsidian_with_transparent_background.png)</p>***
+
+# ***<p style="text-align:center; font-family:'Jaini Purva'">Obsidian Synchronizer</p>***
+
 Installation Steps:
 1. Install python (https://www.python.org/downloads/) and git (https://git-scm.com/downloads)
 2. Create git repo for your vault (on Github, Github etc.)
